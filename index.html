@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  </head>
-  <body>
-      <header class="pageHeader">
-          <h1>Weather Dashboard</h1>
-      </header>
+</head>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Search for a city:
-      </h1>
-      <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Perth" aria-label="Perth">
+<body>
+
+    <h1 class="is-size-2 has-text-weight-bold has-text-centered">Weather Dashboard</h1>
+<div class="columns m-1">
+<div class="column is-3">
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Search for a city:</h1>
+            
+            <div class="row">
+                <div class="col">
+                    <input id="search-input" type="text" class="form-control" placeholder="Perth" aria-label="Perth">
+                </div>
+                <div class="row">
+                    <button id="search-button" class="button">Search</button>
+                </div>
+            </div>
         </div>
-        <div class="row">
-        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
-        </div>
-      </div>
-    </div>
-  </section>
- 
+    </section>
+
+    <section>
+        <h2 id="temperature"></h2>
+    </section>
+</div>   
+<div class="column is-9">
+    <h1 class="title level-right"> Weather information about city selected</h1>
+</div>
+
+</div>
     
 
-<script src="./script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-  </body>
-</html>
+  
 
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/weather/0.0.2/weather.js"
+        integrity="sha512-7/bG4xpaIxQqIV5I0ETUSAAo2OJ1fLuWdt+o5pFUa3KAFR9jmvSLAFJ5VJPjMbZsCmh1gDoPogfTZ3zyilqpIg=="
+        crossorigin="anonymous"></script>
+</body>
+</html>
